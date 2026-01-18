@@ -12,4 +12,5 @@
 - **Internal check (busybox):**
 
 1. `kubectl exec busybox -n todoapp -- sh`
-2. `curl http://<TODOAPP_IP>:8000/api/health/live/`
+2. `kubectl get pod todoapp -n todoapp -o wide`
+3. `curl http://<TODOAPP_IP>:8000/api/health/live/`
